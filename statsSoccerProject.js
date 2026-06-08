@@ -52,3 +52,11 @@ console.log("Total de Gols + Assistências: " + totalGA);
 
 let avaliation = statsWelton.calculateAvaliation();
 console.log("Avaliação do jogador: " + avaliation.toFixed(2));
+
+
+// Saída do código: Nome do jogador: Emive
+// Gols: 2
+// Assistências: 2
+// Partidas: 5
+// Total de Gols + Assistências: 4
+// Avaliação do jogador: 8.20
