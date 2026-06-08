@@ -1,20 +1,22 @@
-let notaFiscal = {
-    nomeComprador: "Marcos Campos",
-    cpf: "123.456.789-00",
-    dataCompra: "2024-06-01",
-    itens: [
-        {
-            nome: "Macbook Neo 15",
-            quantidade: 1,
-            precoUnitario: 4400.00,
-        },
-        {
-            nome: "Teclado 60% RGB Wireless HyperX",
-            quantidade: 1,
-            precoUnitario: 250.00,
-        }
-    ],
-    precoTotal: 4650.00
+let invoice = {
+    name: "Neymar",
+    age: 34,
+    golsPorTime: {
+        0: ["PSG" , 102],
+        1: ["Barcelona" , 105],
+        2: ["Santos" , 270],
+        3: ["Seleção Brasileira" , 77]
+    },
+    
 }
 
-console.log(notaFiscal);
+generateInvoice(invoice)
+
+function generateInvoice(invoice) {
+    console.log("Nome: " + invoice.name);
+    console.log("Idade: " + invoice.age);
+    console.log("Gols por time:");
+    for (let time in invoice.golsPorTime) {
+        console.log("- " + invoice.golsPorTime[time][0] + ": " + invoice.golsPorTime[time][1] + " gols");
+    }
+}
